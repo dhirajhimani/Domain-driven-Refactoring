@@ -11,6 +11,15 @@
 - New to backend and to C#/.NET. Explain C# in Kotlin terms (`record` = `data class`, `async/await` = coroutines, DI container = Koin/Spring).
 - Plain English, short answers. Define each term once, the first time. Domain terms (kadhai, khata) get a parenthetical translation.
 
+## The book text is in this repo
+
+The 12 chapters are Markdown files in `docs/chapters/` (`Chapter 01 - Evolution of DDD.md` … `Chapter 12 - Orchestrating Complexity.md`). They are the owner's personal study copy.
+
+- When the owner asks a question or names a chapter, **read that chapter file first** (use `grep` or view a line range; the files are 25-65 KB, so never load them whole without need) and answer from it.
+- **Summarise in your own words**; quote at most a short phrase and never paste long passages into answers, notes or code (licence). Do not copy chapters elsewhere, including into VyaparOS.
+- Treat `docs/chapters/` as read-only, like `reference/`.
+- If the chapter and the `reference/` code disagree, say so and trust the code.
+
 ## Strategy: learn on the go, no full port
 
 - **Do not port BrewUp to Kotlin.** The goal is understanding VyaparOS, not rebuilding a beer app.
@@ -52,7 +61,7 @@ The book uses C#, RabbitMQ and Kurrent. The owner's playground uses **Kotlin + K
 
 ## How to work here
 
-1. **Never modify `reference/`.** If asked to, refuse and point to `playground/`.
+1. **Never modify `reference/` or `docs/chapters/`.** If asked to, refuse and point to `playground/`.
 2. **Compare stages with `diff -r`**, e.g. `diff -r reference/01-monolith_legacy/src reference/02-monolith_with_cqrs/src`. It shows exactly what a refactoring changed and is the best teaching tool here.
 3. **Say which stage you are explaining** (a `reference/` folder or `playground/`).
 4. **Guide first**: short explanation, point at the file, then offer the smallest Kotlin example. You write it, the owner only reads and runs it.
