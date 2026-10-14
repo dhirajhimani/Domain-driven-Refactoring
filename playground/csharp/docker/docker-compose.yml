@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  logistics-mongodb:
+      image: mongo
+      ports:
+          - 17017:27017
+
+      volumes:
+         - type: volume
+           source: logistics-mongodb-data
+           target: /var/lib/logistics-mongodb
+
+volumes:
+  logistics-mongodb-data:
